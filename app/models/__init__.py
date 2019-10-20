@@ -7,7 +7,7 @@ Base = declarative_base()
 
 from .mapping import CloudRegion, InstanceType, Status, Tag
 from .cluster import Cluster, ClusterInstanceRelationship
-from .instance import Instance
+from .instance import Instance, InstanceTagRelationship
 
 __all__ = [
     "CloudRegion",
@@ -17,4 +17,5 @@ __all__ = [
     "Cluster",
     "Instance",
     "ClusterInstanceRelationship",
+    "InstanceTagRelationship",
 ]

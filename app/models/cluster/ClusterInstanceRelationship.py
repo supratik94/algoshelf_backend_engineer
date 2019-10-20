@@ -28,7 +28,7 @@ class ClusterInstanceRelationship(Base):
     instance_id = Column(
         ForeignKey(
             Instance.id,
-            name="INSTANCE_ID_FOREIGN_KEY",
+            name="CLUSTER_INSTANCE_RELATIONSHIP_INSTANCE_ID_FOREIGN_KEY",
             onupdate="CASCADE",
             ondelete="CASCADE",
         ),
