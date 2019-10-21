@@ -25,14 +25,14 @@ class Cluster(Base):
         type_=Integer,
         nullable=False,
     )
-    cluster_status_id = Column(
+    status_id = Column(
         ForeignKey(
             Status.id,
             name="CLUSTER_STATUS_ID_FOREIGN_KEY",
             onupdate="CASCADE",
             ondelete="RESTRICT",
         ),
-        name="CLUSTER_STATUS_ID",
+        name="STATUS_ID",
         nullable=False,
         default=1,
     )
