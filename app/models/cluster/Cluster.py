@@ -34,7 +34,7 @@ class Cluster(Base):
         ),
         name="CLUSTER_STATUS_ID",
         nullable=False,
-        default=False,
+        default=1,
     )
 
     __table_args__ = (UniqueConstraint("NAME", name="CLUSTER_NAME_UNIQUE_KEY"),)
