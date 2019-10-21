@@ -11,6 +11,6 @@ class Status(Base):
     id = Column(
         name="ID", type_=Integer, primary_key=True, autoincrement=True, nullable=False
     )
-    cloud_region = Column(name="STATUS", type_=String(255), nullable=False)
+    status = Column(name="STATUS", type_=String(255), nullable=False)
 
     __table_args__ = (UniqueConstraint("STATUS", name="STATUS_UNIQUE_KEY"),)
