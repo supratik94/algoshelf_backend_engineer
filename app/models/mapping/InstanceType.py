@@ -11,6 +11,8 @@ class InstanceType(Base):
     id = Column(
         name="ID", type_=Integer, primary_key=True, autoincrement=True, nullable=False
     )
-    cloud_region = Column(name="CLOUD_REGION", type_=String(255), nullable=False)
+    instance_type = Column(name="INSTANCE_TYPE", type_=String(255), nullable=False)
 
-    __table_args__ = (UniqueConstraint("CLOUD_REGION", name="CLOUD_REGION_UNIQUE_KEY"),)
+    __table_args__ = (
+        UniqueConstraint("INSTANCE_TYPE", name="INSTANCE_TYPE_UNIQUE_KEY"),
+    )
